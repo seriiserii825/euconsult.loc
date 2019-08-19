@@ -62,3 +62,12 @@
 		color: $color;
 	}
 }
+@mixin helvetica {
+	font-family: 'Helvetica', sans-serif;
+}
+@mixin arimo {
+	font-family: 'Arimo Regular', sans-serif;
+}
+@mixin roboto {
+	font-family: 'Roboto Regular', sans-serif;
+}
