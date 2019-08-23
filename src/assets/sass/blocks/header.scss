@@ -1,7 +1,6 @@
 .header {
   padding: 3px 0;
   background: white;
-  @include outline;
 }
 .header__content {
   display: flex;
