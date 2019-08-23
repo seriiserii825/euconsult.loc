@@ -1,0 +1,34 @@
+.header {
+  padding: 3px 0;
+  background: white;
+  @include outline;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1314px;
+}
+.main-menu {
+  display: flex;
+  margin-left: 98px;
+  li {
+    margin-right: 24px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  a {
+    @include helveticabold;
+    font-size: 15px;
+    color: $lucky-point;
+  }
+}
+.wpglobus-lang {
+  margin-left: 41px;
+  a {
+    margin-left: 11px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,36 @@
+.wpglobus-lang {
+  display: flex;
+  align-items: center;
+}
+
+.wpglobus-lang .list {
+  position: relative;
+  top: -2px;
+}
+
+.wpglobus-selector-link {
+  margin-left: 10px;
+  @include raleway;
+  font-size: 17px;
+}
+
+.wpglobus-selector-link .name,
+.wpglobus-selector-link img {
+  display: none;
+}
+
+.wpglobus-selector-link:visited,
+.wpglobus-selector-link {
+  font-size: 15px;
+  text-decoration: none;
+  color: $lucky-point;
+  transition: all .4s;
+}
+
+.wpglobus-selector-link:hover {
+  color: $accent;
+}
+
+.wpglobus-selector-link.wpglobus-current-language {
+  color: $accent;
+}

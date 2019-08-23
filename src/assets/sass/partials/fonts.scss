@@ -1,28 +1,27 @@
 @font-face {
-	font-family: 'Helvetica';
-	src: url("../fonts/OpenSans-Regular.woff2") format('woff2'),
-	url("../fonts/OpenSans-Regular.woff") format('woff');
+	font-family: 'Raleway';
+	src: url("../fonts/Raleway-Regular.woff") format('woff');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Helvetica';
-	src: url("../fonts/Helvetica.ttf") format('ttf');
-	font-weight: normal;
+	src: url("../fonts/Helvetica.woff") format('woff');
+	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Arimo Regular';
-	src: url("../fonts/Arimo-Regular.ttf") format('ttf');
-	font-weight: normal;
+	font-family: 'Helvetica Light';
+	src: url("../fonts/Helvetica-Light.woff") format('woff');
+	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Roboto Regular';
-	src: url("../fonts/Roboto-Regular.ttf") format('ttf');
-	font-weight: normal;
+	font-family: 'Helvetica Bold';
+	src: url("../fonts/Helvetica-Bold.woff") format('woff');
+	font-weight: 400;
 	font-style: normal;
 }
