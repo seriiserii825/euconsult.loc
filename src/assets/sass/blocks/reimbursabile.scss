@@ -1,0 +1,12 @@
+.reimbursabile-wrap {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1052px;
+}
+.reimbursabile__content {
+  @include helveticalight;
+  max-width: 950px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 28px;
+}

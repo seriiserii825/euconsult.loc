@@ -1,0 +1,32 @@
+.section {
+  padding-top: 36px;
+  padding-bottom: 42px;
+}
+.section__header {
+  margin-bottom: 38px;
+  &.section__header--center {
+    text-align: center;
+    .section__title::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+.section__title {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding-bottom: 6px;
+  @include spinnaker;
+  font-size: 40px;
+  color: $lucky-point;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 87px;
+    height: 3px;
+    background: $accent-hex;
+  }
+}
