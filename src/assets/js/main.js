@@ -51,6 +51,24 @@ $(function () {
 		});
 	};
 	partnersSlider();
+
+	let ideaSlider = function () {
+		$('#js-idea__slider').slick({
+			arrows: false,
+			dots: true,
+			slidesToShow: 2,
+			slidesToScroll: 2,
+		});
+
+		$('.idea .slider__arrow-left').on('click', function (e) {
+			$('#js-idea__slider').slick('slickNext');
+		});
+
+		$('.idea .slider__arrow-right').on('click', function (e) {
+			$('#js-idea__slider').slick('slickPrev');
+		});
+	};
+	ideaSlider();
 });
 
 

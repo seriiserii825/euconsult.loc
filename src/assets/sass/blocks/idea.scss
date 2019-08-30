@@ -1,0 +1,43 @@
+.idea__wrap {
+  position: relative;
+  z-index: 4;
+}
+.idea__content {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1160px;
+  z-index: 4;
+}
+.idea__slide {
+  padding: 0 40px;
+}
+.idea__block {
+  padding: 20px 0 40px;
+  background: white;
+  h5 {
+    margin-bottom: 20px;
+    @include helveticabold;
+    font-size: 17px;
+    letter-spacing: 0.68px;
+    text-transform: uppercase;
+    color: $lucky-point;
+  }
+}
+.idea__text {
+  @include helveticalight;
+  font-weight: bold;
+  letter-spacing: .48px;
+  line-height: 24px;
+  color: $pickled-bluewood;
+  a {
+    display: block;
+    @include helvetica;
+    letter-spacing: .48px;
+    text-decoration: underline;
+  }
+  .read-more {
+    float: right;
+    text-transform: uppercase;
+    color: $picton-blue;
+  }
+}
