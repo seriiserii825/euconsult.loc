@@ -1,0 +1,46 @@
+.numbers.section {
+  padding-top: 44px;
+}
+.numbers__content {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 19px;
+  margin: 0 auto;
+  max-width: 1132px;
+  color: white;
+  z-index: 4;
+}
+.numbers__item {
+  padding-top: 24px;
+  padding-bottom: 35px;
+  text-align: center;
+  background: #3E80C4;
+  h5 {
+    position: relative;
+    display: table;
+    margin: 0 auto 18px;
+    width: 115px;
+    @include raleway;
+    padding-bottom: 6px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1.7px;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 3px;
+      background: $accent-hex;
+    }
+  }
+}
+.numbers__text {
+  @include helveticabold;
+  font-size: 60px;
+  text-transform: uppercase;
+}
