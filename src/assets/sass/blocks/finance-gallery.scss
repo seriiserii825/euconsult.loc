@@ -13,9 +13,23 @@
   margin: 0 auto;
   max-width: 1028px;
   z-index: 3;
+  @media screen and (max-width: 1020px) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 660px;
+  }
+  @media screen and (max-width: 686px) {
+    display: block;
+  }
+
+
 }
 .finance-gallery__item {
   position: relative;
+  @media screen and (max-width: 686px) {
+    display: table;
+    margin: 0 auto 20px;
+  }
+
 }
 .finance-gallery__content {
   position: relative;
@@ -54,4 +68,8 @@
   width: 309px;
   height: 214px;
   border: 2px solid $accent-hex;
+  @media screen and (max-width: 686px) {
+    display: none;
+  }
+
 }
