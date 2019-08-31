@@ -10,6 +10,14 @@
   max-width: 1132px;
   color: white;
   z-index: 4;
+  @media screen and (max-width: 1190px) {
+  	padding: 0 15px;
+  }
+  @media screen and (max-width: 890px) {
+  	grid-template-columns: repeat(2, 1fr);
+  }
+
+  
 }
 .numbers__item {
   padding-top: 24px;
@@ -43,4 +51,8 @@
   @include helveticabold;
   font-size: 60px;
   text-transform: uppercase;
+  @media screen and (max-width: 460px) {
+    font-size: 32px;
+  }
+
 }

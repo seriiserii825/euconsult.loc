@@ -1,5 +1,4 @@
 .partners {
-  outline: 1px solid red;
   &.section {
     padding-top: 38px;
     padding-bottom: 70px;
@@ -13,6 +12,12 @@
     &:after {
       width: 112px;
     }
+  }
+  .slider-buttons {
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+
   }
   .slick-dots {
     bottom: -40px;

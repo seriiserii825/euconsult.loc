@@ -29,10 +29,20 @@
   margin: 0 auto 30px;
   padding: 0 15px;
   max-width: 1040px;
+  @media screen and (max-width: 920px) {
+    display: block;
+    margin-bottom: 80px;
+  }
+
 }
 .footer__contacts {
   position: relative;
   top: 17px;
+  @media screen and (max-width: 920px) {
+  	display: table;
+    margin: 0 auto;
+  }
+
 }
 .footer__contacts li {
   display: flex;
@@ -61,6 +71,10 @@
   padding: 12px 20px;
   height: 194px;
   border: 1px solid white;
+  @media screen and (max-width: 920px) {
+    display: none;
+  }
+
   &__text {
     margin-bottom: 13px;
     @include helveticalight;

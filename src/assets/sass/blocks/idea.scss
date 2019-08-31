@@ -14,6 +14,15 @@
   .slick-dots {
     bottom: -60px;
   }
+
+  .slick-slide {
+    &>div {
+      @media screen and (max-width: 1050px) {
+        text-align: center;
+      }
+
+    }
+  }
 }
 .idea__wrap {
   position: relative;
@@ -27,6 +36,13 @@
 }
 .idea__slide {
   padding: 0 26px;
+  @media screen and (max-width: 1088px) {
+    display: table;
+    margin: 0 auto;
+  	max-width: 502px;
+    width: auto;
+  }
+
 }
 .idea__block {
   padding: 28px 20px 54px;
@@ -66,6 +82,9 @@
   .slider__arrow {
     top: 202%;
     width: 64px;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
     &-left {
       left: -62px;
     }

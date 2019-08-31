@@ -40,6 +40,15 @@ $(function () {
 			dots: true,
 			slidesToShow: 3,
 			slidesToScroll: 2,
+			responsive: [{
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false
+				}
+
+			}]
 		});
 
 		$('.partners__arrow-left').on('click', function (e) {
@@ -58,6 +67,15 @@ $(function () {
 			dots: true,
 			slidesToShow: 2,
 			slidesToScroll: 2,
+			responsive: [{
+				breakpoint: 1088,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false
+				}
+
+			}]
 		});
 
 		$('.idea .slider__arrow-left').on('click', function (e) {
@@ -78,6 +96,48 @@ $(function () {
 		});
 	};
 	sandwitch();
+
+	let navigation = function () {
+		let navigationLi = $('#js-navigation li');
+		navigationLi.on('mouseenter', function(){
+			if(!$(this).hasClass('active')){
+				$(this).find('a').addClass('active');
+			}
+		});
+
+		navigationLi.on('mouseout', function(){
+			if(!$(this).hasClass('active')){
+				$(this).find('a').removeClass('active');
+			}
+		});
+
+		let header = $('#js-header');
+		let headerHeight = header.innerHeight();
+		let indexIntro = $('#js-index-intro');
+		let introHeight = indexIntro.innerHeight();
+		let introOffsetTop = indexIntro.offset().top;
+		let navigation = $('#js-navigation');
+		let navigationList = $('#js-navigation .navigation__list');
+		let navigationHeight = navigation.innerHeight();
+
+		let darkSection = headerHeight + introHeight;
+
+		$(document).on('scroll', function () {
+			let navigationOffsetTopOnScroll = navigation.offset().top + navigationHeight;
+
+			console.log('navSect: '  + navigationOffsetTopOnScroll);
+			console.log('darkSect: ' + darkSection);
+
+			if(navigationOffsetTopOnScroll > (darkSection)){
+				navigationList.addClass('light');
+			}else{
+				navigationList.removeClass('light');
+			}
+
+		});
+
+	};
+	navigation();
 });
 
 

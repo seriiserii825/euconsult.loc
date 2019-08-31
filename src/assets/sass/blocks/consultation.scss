@@ -6,11 +6,21 @@
   .section__title {
     font-size: 48px;
     letter-spacing: -1px;
+    @media screen and (max-width: 750px) {
+      font-size: 34px;
+    }
     &::after {
       left: auto;
       right: 16px;
       bottom: 7px;
       width: 288px;
+      @media screen and (max-width: 750px) {
+        width: 80px;
+        left: 50%;
+        right: 0;
+        transform: translateX(-50%);
+      }
+
     }
   }
 }
@@ -19,12 +29,20 @@
   margin: 0 auto;
   padding-left: 270px;
   max-width: 984px;
+  @media screen and (max-width: 950px) {
+    padding-left: 15px;
+  }
+
 
   img {
     position: absolute;
     left: 0;
     top: 53%;
     transform: translateY(-50%);
+    @media screen and (max-width: 950px) {
+      display: none;
+    }
+
   }
 }
 
@@ -32,9 +50,19 @@
   .section__header {
     margin-bottom: 36px;
   }
+  .btn-popup-wrap {
+    @media screen and (max-width: 750px) {
+      text-align: center;
+    }
+    
+  }
   .popup-btn {
     position: relative;
     right: 83px;
+    @media screen and (max-width: 750px) {
+      position: static;
+    }
+
   }
 }
 
