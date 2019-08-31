@@ -69,6 +69,15 @@ $(function () {
 		});
 	};
 	ideaSlider();
+
+	let sandwitch = function () {
+		$('.sandwitch-wrap').on('click', function () {
+			$('.main-menu').toggleClass('active');
+
+			$(this).find('.sandwitch').toggleClass('sandwitch--active');
+		});
+	};
+	sandwitch();
 });
 
 

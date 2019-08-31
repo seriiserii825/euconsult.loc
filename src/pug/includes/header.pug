@@ -3,8 +3,15 @@ header.header
         .logo
             a(href="index.html")
                 img(src="assets/i/logo.png" alt='')
-        ul.main-menu
-            li
+
+        .sandwitch-wrap
+            .sandwitch
+                .sandwitch__line.sandwitch__line--top
+                .sandwitch__line.sandwitch__line--middle
+                .sandwitch__line.sandwitch__line--bottom
+
+        ul.main-menu#js-main-menu
+            li.current-menu-item
                 a(href="#") Despre noi
             li
                 a(href="#") Servicii
@@ -18,7 +25,6 @@ header.header
                 a(href="#") Știri
             li
                 a(href="#") Contacte
-
 
         .wpglobus-lang
             .list
