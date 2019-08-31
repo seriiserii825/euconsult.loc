@@ -1,3 +1,20 @@
+.idea.section {
+  padding-top: 34px;
+  padding-bottom: 100px;
+  .section__header {
+    margin-bottom: 46px;
+  }
+  .section__title {
+    left: 2px;
+    letter-spacing: -.8px;
+    &::after {
+      width: 114px;
+    }
+  }
+  .slick-dots {
+    bottom: -60px;
+  }
+}
 .idea__wrap {
   position: relative;
   z-index: 4;
@@ -5,20 +22,20 @@
 .idea__content {
   position: relative;
   margin: 0 auto;
-  max-width: 1160px;
+  max-width: 1083px;
   z-index: 4;
 }
 .idea__slide {
-  padding: 0 40px;
+  padding: 0 26px;
 }
 .idea__block {
-  padding: 20px 0 40px;
+  padding: 28px 20px 54px;
   background: white;
   h5 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     @include helveticabold;
     font-size: 17px;
-    letter-spacing: 0.68px;
+    letter-spacing: -0.22px;
     text-transform: uppercase;
     color: $lucky-point;
   }
@@ -36,8 +53,24 @@
     text-decoration: underline;
   }
   .read-more {
+    position: relative;
+    top: 8px;
+    left: 4px;
     float: right;
     text-transform: uppercase;
+    letter-spacing: 1.2px;
     color: $picton-blue;
+  }
+}
+.idea {
+  .slider__arrow {
+    top: 202%;
+    width: 64px;
+    &-left {
+      left: -62px;
+    }
+    &-right {
+      right: -62px;
+    }
   }
 }
