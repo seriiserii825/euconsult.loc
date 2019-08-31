@@ -4,6 +4,10 @@
 }
 .section__header {
   margin-bottom: 38px;
+  @media screen and (max-width: 750px) {
+    text-align: center;
+  }
+  
   &.section__header--center {
     text-align: center;
     .section__title::after {
@@ -20,6 +24,10 @@
   @include spinnaker;
   font-size: 40px;
   color: $lucky-point;
+  @media screen and (max-width: 750px) {
+    font-size: 34px;
+  }
+
   &::after {
     content: '';
     position: absolute;
@@ -28,6 +36,10 @@
     width: 87px;
     height: 3px;
     background: $accent-hex;
+    @media screen and (max-width: 750px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 .section-dark {
