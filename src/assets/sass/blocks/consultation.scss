@@ -1,0 +1,51 @@
+.consultation {
+  &.section {
+    padding-top: 55px;
+    padding-bottom: 53px;
+  }
+  .section__title {
+    font-size: 48px;
+    letter-spacing: -1px;
+    &::after {
+      left: auto;
+      right: 16px;
+      bottom: 7px;
+      width: 288px;
+    }
+  }
+}
+.consultation-wrap {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 270px;
+  max-width: 984px;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 53%;
+    transform: translateY(-50%);
+  }
+}
+
+.consultation {
+  .section__header {
+    margin-bottom: 36px;
+  }
+  .popup-btn {
+    position: relative;
+    right: 83px;
+  }
+}
+
+.consultation__text {
+  margin-bottom: 15px;
+  max-width: 642px;
+  @include helveticalight;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: .68px;
+  color: $fiord;
+}
+
