@@ -1,0 +1,35 @@
+.page-intro {
+  &.section-dark {
+    &::after {
+      background: #192965ab;
+    }
+  }
+  padding: 93px 15px 46px;
+  .section__header {
+    margin-bottom: 36px;
+  }
+  .section__title {
+    padding-bottom: 15px;
+    font-size: 42px;
+    font-weight: bold;
+    color: $accent-hex;
+    &::after {
+      width: 164px;
+      background: white;
+    }
+  }
+  p {
+    margin: 0 auto;
+    max-width: 664px;
+    @include helveticalight;
+    font-size: 22px;
+    line-height: 38px;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: white;
+  }
+}
+.page-intro__container {
+  position: relative;
+  z-index: 8;
+}
