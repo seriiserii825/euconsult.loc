@@ -2,6 +2,12 @@
   padding-top: 41px;
   padding-bottom: 25px;
   color: white;
+  &.hidden {
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+
+  }
 
   .section__header,
   &__content,
