@@ -1,5 +1,4 @@
 $(function () {
-
 	let historySlider = function () {
 		$('#js-history-slider').slick({
 			arrows: false,
@@ -16,5 +15,4 @@ $(function () {
 		});
 	};
 	historySlider();
-
 });
