@@ -1,4 +1,4 @@
-$(function () {
+jQuery(document).ready(function($) {
 	let historySlider = function () {
 		$('#js-history-slider').slick({
 			arrows: false,
@@ -39,14 +39,6 @@ $(function () {
 		$('.partners .slider__arrow-right').on('click', function (e) {
 			$('#js-partners__slider').slick('slickPrev');
 		});
-
-		// $('.partners__arrow-left').on('click', function (e) {
-		// 	$('#js-partners__slider').slick('slickNext');
-		// });
-		//
-		// $('.partners__arrow-right').on('click', function (e) {
-		// 	$('#js-partners__slider').slick('slickPrev');
-		// });
 	};
 	partnersSlider();
 
@@ -136,7 +128,7 @@ $(function () {
 
 			});
 
-			$('#js-navigation a').on('click', function (e) {
+			$('#js-navigation a').on('click', function (event) {
 				let target = $($(this).attr('href'));
 
 				if (target.length) {
