@@ -170,9 +170,6 @@ gulp.task("js", function () {
 		.pipe(babel({
 			presets: ['@babel/env']
 		}))
-		.pipe(gulp.dest('build/assets/js'))
-		.pipe(uglify())
-		.pipe(rename("main.min.js"))
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('build/assets/js'))
 		.pipe(browserSync.reload({
