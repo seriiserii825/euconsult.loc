@@ -1,12 +1,13 @@
 .sandwitch-wrap {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 50px;
   padding: 10px;
   display: none;
-  border: 1px solid #ccc;
+  border: 1px solid $lucky-point;
   border-radius: 3px;
-  z-index: 100000000;
+  z-index: 100000;
+  background: rgba(255,255,255,.7);
   @media screen and (max-width: 1300px) {
     display: block;
   }
@@ -44,7 +45,7 @@
   width: 100%;
   height: 2px;
   transition: all linear 0.1s;
-  background-color: #ccc;
+  background-color: $lucky-point;
 }
 
 .sandwitch__line--top {

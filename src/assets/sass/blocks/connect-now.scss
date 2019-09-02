@@ -1,0 +1,93 @@
+.connect-now {
+  &__title {
+    position: relative;
+    left: -6px;
+    margin-bottom: 17px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 23px;
+    letter-spacing: 1.04px;
+    text-align: center;
+    color: $sttopaz;
+    @media screen and (max-width: 440px) {
+      display: none;
+    }
+
+  }
+  &__links {
+    position: relative;
+    left: 44px;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 770px) {
+      display: table;
+      position: static;
+      margin: 0 auto;
+    }
+
+  }
+  &__popup,
+  &__phone {
+    transition: all .6s;
+    height: 50px;
+
+    &:hover {
+      background: $lucky-point;
+    }
+  }
+  &__popup {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 404px;
+    background: #7AD3F4;
+    @media screen and (max-width: 440px) {
+      width: 300px;
+    }
+    img {
+      margin-right: 8px;
+      @media screen and (max-width: 440px) {
+        display: none;
+      }
+    }
+    span {
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 2.8px;
+      color: white;
+      @media screen and (max-width: 440px) {
+        font-size: 20px;
+      }
+
+    }
+  }
+  &__phone {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    width: 208px;
+    font-size: 18px;
+    line-height: 54px;
+    color: white;
+    background: $allports;
+    @media screen and (max-width: 770px) {
+      width: 404px;
+    }
+    @media screen and (max-width: 440px) {
+      width: 300px;
+    }
+    img {
+      @media screen and (max-width: 770px) {
+        margin-right: 20px;
+      }
+      @media screen and (max-width: 440px) {
+        display: none;
+      }
+
+    }
+
+    span {
+      letter-spacing: .4px;
+    }
+  }
+}

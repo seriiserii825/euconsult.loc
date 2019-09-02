@@ -13,7 +13,6 @@ block content
     .hidden
         include ../../../build/assets/i/svg/inline/sprite.svg
 
-    include ../includes/navigation
     include ../includes/header
 
     section.section-dark.page-intro(style="background-image: url('assets/i/intro/about-intro.jpg')")
@@ -22,9 +21,43 @@ block content
                 h2.section__title Despre noi
             p De ce să ne alegi pe noi? Care sunt avantajele colaborării cu compania Eu Consult
 
+    .page-about
+        sidebar.sidebar
+            .widget
+                h2 Contactele noastre:
+                ul
+                    li
+                        img(src="assets/i/icon-map.png")
+                        span Chișinău, bd. Mircea cel Bătrân 8/1
+                    li
+                        img(src="assets/i/icon-phone.png")
+                        a(href="tel:37379966599") +373 799 665 99
+                    li
+                        img(src="assets/i/icon-letter.png")
+                        a(href="mailto:euconsult.md@gmail.com") euconsult.md@gmail.com
+        main.main
+            p <strong>EU CONSULT este Echipa care te ajută să inițiezi sau să dezvolți o afacere din fonduri europene cu minim aport propriu. Cu ajutorul nostru vei fi la curent cu toate finanțările existente pentru afacerea ta, atât în Republica Moldova cât și România</strong>
+            p Te vom consulta la orice etapă de implimentare a proiectului. Acționăm rapid și cu soluții originale pentru a obține doar rezultate pozitive. Clientul este imaginea noastră în societate, iată de ce afacerile ghidate de echipa EU CONSULT sunt de succes și se dezvoltă intens.
+            p In tot procesul de accesare a fondurilor nerambursabile veți simți un sprijin din partea echipei de specialiști  din diferite domenii: finanțe, contabilitate, juridic, marketing, management.
+            h5 Avantajele colaborării cu EU Consult:
+            ul
+                li <strong>Soluții originale</strong> – fiecare client este consultat individual, conform necesităților sale, ținând cont de fiecare detaliu care ar putea aduce beneficii afacerii
+                li <strong>Profesionalism</strong> – suntem o echipă de specialiști din diferite domenii (finanțe, contabilitate, juridic, marketing, management) cu o experiență bogată în consultanță de afaceri.
+                li <strong>Rezultate pozitive</strong> – ne concentrăm tot profesionalismul nostru pentru a obține maximum beneficii, atât financiare cât și materiale, pentru clienții noștri.
+                li <strong>Rapiditate în deservire</strong> – suntem mereu la legătură cu clienții noștri, îi ghidăm corect, alegem cele mai scurte căi pentru a obține rezultatul așteptat.
+                li <strong>Avocatul afacerii tale</strong> – alături de specialiștii noștri nu te mai simți singur în fața birocrației, acționezi încrezut, corect și la timp.
+
+            p Colaborând cu noi aveți garanția că proiectul Dvs. va avea un rezultat pozitiv și veți începe cu dreptul activitatea Dvs. în domeniul selectat.
+
+            include ../includes/connect-now
+
+
     include ../includes/footer
+    include ../includes/popup
 
     include ../includes/scripts/ie-scripts
 
 block scripts
     script(src="assets/libs/jquery-easy-scroll/jquery.easeScroll.js")
+    script(src="assets/libs/slick/slick/slick.min.js")
+    script(src="assets/js/main.js")
