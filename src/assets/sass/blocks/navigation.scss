@@ -6,6 +6,10 @@ $blue: rgba(122, 211, 244, 1);
   transform: translateY(-50%);
   //width: 200px;
   z-index: 100000000;
+  @media screen and (max-width: 880px) {
+    display: none;
+  }
+
   &.light {
     li {
       &::after {
