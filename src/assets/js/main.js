@@ -161,6 +161,20 @@ $(function () {
 		});
 	};
 	navigation();
+
+	let popup = function () {
+		$('.popup-btn').on('click', function (e) {
+			e.preventDefault();
+			$('#js-popup').fadeIn();
+		});
+
+		$('.close_popup').on('click',function (e) {
+			e.preventDefault();
+
+			$('#js-popup').fadeOut();
+		});
+	};
+	popup();
 });
 
 

@@ -40,6 +40,37 @@
 
 }
 
+@mixin placeholder-input-font-size($font-size) {
+  &[type='text']::-webkit-input-placeholder,
+  &[type='email']::-webkit-input-placeholder,
+  &[type='phone']::-webkit-input-placeholder {
+    font-size: $font-size;
+  }
+
+  &[type='text']::-moz-placeholder,
+  &[type='email']::-moz-placeholder,
+  &[type='phone']::-moz-placeholder {
+    font-size: $font-size;
+  }
+
+  /* webkit */
+
+  &[type='text']:-moz-placeholder,
+  &[type='email']:-moz-placeholder,
+  &[type='phone']:-moz-placeholder {
+    font-size: $font-size;
+  }
+
+  /* webkit */
+
+  &[type='text']:-ms-input-placeholder,
+  &[type='email']:-ms-input-placeholder,
+  &[type='phone']:-ms-input-placeholder {
+    font-size: $font-size;
+  }
+
+}
+
 @mixin placeholder-textarea($color) {
   &::-webkit-input-placeholder {
     color: $color;
