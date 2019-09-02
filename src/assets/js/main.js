@@ -98,44 +98,67 @@ $(function () {
 	sandwitch();
 
 	let navigation = function () {
-		let navigationLi = $('#js-navigation li');
-		navigationLi.on('mouseenter', function(){
-			if(!$(this).hasClass('active')){
-				$(this).find('a').addClass('active');
-			}
-		});
-
-		navigationLi.on('mouseout', function(){
-			if(!$(this).hasClass('active')){
-				$(this).find('a').removeClass('active');
-			}
-		});
-
 		let header = $('#js-header');
-		let headerHeight = header.innerHeight();
-		let indexIntro = $('#js-index-intro');
-		let introHeight = indexIntro.innerHeight();
-		let introOffsetTop = indexIntro.offset().top;
 		let navigation = $('#js-navigation');
 		let navigationList = $('#js-navigation .navigation__list');
 		let navigationHeight = navigation.innerHeight();
 
-		let darkSection = headerHeight + introHeight;
+		let reimbursabile = $("#js-reimbursabile");
+		let history = $("#js-history");
+		let partners = $("#js-partners");
+		let consultation = $("#js-consultation");
+		let contacts = $("#js-footer");
 
 		$(document).on('scroll', function () {
-			let navigationOffsetTopOnScroll = navigation.offset().top + navigationHeight;
-
-			console.log('navSect: '  + navigationOffsetTopOnScroll);
-			console.log('darkSect: ' + darkSection);
-
-			if(navigationOffsetTopOnScroll > (darkSection)){
-				navigationList.addClass('light');
+			if(
+				(navigation.offset().top > reimbursabile.offset().top && navigation.offset().top < (reimbursabile.offset().top + reimbursabile.innerHeight())) ||
+				(navigation.offset().top > history.offset().top && navigation.offset().top < (history.offset().top + history.innerHeight())) ||
+				(navigation.offset().top > partners.offset().top && navigation.offset().top < (partners.offset().top + partners.innerHeight())) ||
+				(navigation.offset().top > consultation.offset().top && navigation.offset().top < (consultation.offset().top + consultation.innerHeight()))
+			){
+				if(!navigation.hasClass('light')){
+					navigation.addClass('light');
+				}
 			}else{
-				navigationList.removeClass('light');
+				navigation.removeClass('light');
+			}
+
+			if(
+				(navigation.offset().top > reimbursabile.offset().top && navigation.offset().top < (reimbursabile.offset().top + reimbursabile.innerHeight()))
+			){
+				let iranbursabileA = $('#js-navigation a[href="#js-reimbursabile"]');
+				if(!iranbursabileA.hasClass('active')){
+					iranbursabileA.addClass('active');
+				}
+				iranbursabileA.addClass('active');
+			} else if((navigation.offset().top > history.offset().top && navigation.offset().top < (history.offset().top + history.innerHeight()))){
+				let iranbursabileA = $('#js-navigation a[href="#js-history"]');
+				if(!iranbursabileA.hasClass('active')){
+					iranbursabileA.addClass('active');
+				}
+				iranbursabileA.addClass('active');
+			} else if((navigation.offset().top > contacts.offset().top && navigation.offset().top < (contacts.offset().top + contacts.innerHeight()))){
+				let iranbursabileA = $('#js-navigation a[href="#js-footer"]');
+				if(!iranbursabileA.hasClass('active')){
+					iranbursabileA.addClass('active');
+				}
+				iranbursabileA.addClass('active');
+			}else {
+				$('#js-navigation a').removeClass('active');
 			}
 
 		});
 
+		$('#js-navigation a').on('click', function (e) {
+			let target = $( $(this).attr('href') );
+
+			if( target.length ) {
+				event.preventDefault();
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+			}
+		});
 	};
 	navigation();
 });
