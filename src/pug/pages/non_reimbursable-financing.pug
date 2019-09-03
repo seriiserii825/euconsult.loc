@@ -1,0 +1,38 @@
+extends template
+
+block css
+    //- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
+    link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+
+block title
+    title Finantari nerambursabile
+
+block content
+    include ../includes/mixins
+
+    .hidden
+        include ../../../build/assets/i/svg/inline/sprite.svg
+
+    include ../includes/header
+
+    section.rambursabile
+        section.rambursabile.section-dark.page-intro(style="background-image: url('assets/i/rambursabile/ramb.jpg'); background-position: center 18%")
+            .page-intro__container
+                header.section__header.section__header--center
+                    h2.section__title Finanțări nerambursabile
+                p Domenii de activitate, programe de finanțări și condiții necesare pentru afacerea Dvs.
+
+        section.page-title.page-title--rambursabile
+            .page-title__container
+                h2.section__title Finanțări nerambursabile
+                p ​EU CONSULT oferă monitorizare, consultanță și asistență în accesarea de fonduri europene (granturi/subvenții) destinate celor care vor să inițieze o afacere sau să o dezvolte. Suntem o echipă de specialiști din diferite domenii: finanțe, management, marketing, contabilitate, juridică. Lucrăm profesionist pentru tine/pentru afacerea ta, ca să obținem rezultate pozitive cu soluții originale.
+
+        include ../includes/finance-gallery-rembursabile
+
+        include ../includes/connect-now
+    include ../includes/footer-hidden
+    include ../includes/socials-bottom
+    include ../includes/scripts/ie-scripts
+
+block scripts
+    script(src="assets/libs/jquery-easy-scroll/jquery.easeScroll.js")

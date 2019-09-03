@@ -18,6 +18,10 @@ body {
   line-height: 1.2;
   color: #000;
   background: white;
+  @media screen and (max-width: 800px) {
+    padding-bottom: 90px;
+  }
+
 }
 
 * {
@@ -95,3 +99,4 @@ p {
 @import "blocks/connect-now";
 @import "blocks/socials-bottom";
 @import "blocks/our-services";
+@import "blocks/rambursabile";

@@ -1,0 +1,28 @@
+.rambursabile {
+  background: $seashell;
+
+  &.page-intro {
+    padding-top: 96px;
+    padding-bottom: 53px;
+    .section__title {
+      padding-bottom: 8px;
+      &::after {
+        width: 120px;
+      }
+    }
+    .section__header {
+      margin-bottom: 34px;
+    }
+  }
+  .finance-gallery {
+    margin-top: -50px;
+    padding-bottom: 60px;
+    background: $seashell !important;
+    &::after {
+      display: none;
+    }
+  }
+}
+.page-title--rambursabile {
+  background: $seashell;
+}
