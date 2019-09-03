@@ -1,0 +1,140 @@
+.news {
+  .page-intro {
+    p {
+      max-width: 640px;
+    }
+  }
+  .section__header {
+    margin-bottom: 49px;
+  }
+  .section__title {
+    padding-bottom: 2px;
+    &::after {
+      content: '';
+      width: 120px;
+    }
+  }
+  &__container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 960px;
+  }
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    & > li {
+      margin-right: 40px;
+      &:hover {
+        color: $thunderbird;
+      }
+    }
+    li {
+      @include helveticalight;
+      font-size: 16px;
+      transition: all .4s;
+      &:hover {
+        cursor: pointer;
+      }
+      &.active {
+        color: $thunderbird;
+      }
+      &.sub-list {
+        position: relative;
+        &:hover {
+          color: inherit;
+          .news__sub-list {
+            display: block;
+          }
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          top: 2px;
+          right: -20px;
+          width: 10px;
+          height: 10px;
+          background: url('../i/svg/down-arrow.svg');
+        }
+      }
+    }
+    .news__sub-list {
+      position: absolute;
+      top: 18px;
+      left: 0;
+      display: none;
+      width: 250px;
+      background: white;
+      z-index: 10;
+      li {
+        padding: 20px;
+        border-bottom: 1px solid #ccc;
+        &:hover {
+          color: $thunderbird;
+        }
+      }
+    }
+  }
+  &__search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    input[type="text"] {
+      text-indent: 10px;
+    }
+    .show-search {
+      padding-top: 2px;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    &-block {
+      display: none;
+    }
+    &-close {
+      position: absolute;
+      top: 5px;
+      right: 2px;
+      width: 12px;
+      height: 12px;
+      cursor: pointer;
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 12px;
+        height: 2px;
+        background: #000;
+      }
+      &::before {
+        left: 3px;
+        transform-origin: left top;
+        transform: rotate(45deg);
+      }
+      &::after {
+        right: 2px;
+        transform-origin: right top;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  &__register {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    @include helveticalight;
+    font-size: 16px;
+    color: $thunderbird;
+    border: 1px solid $thunderbird;
+  }
+}

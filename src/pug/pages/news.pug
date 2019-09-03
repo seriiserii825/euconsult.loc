@@ -1,0 +1,60 @@
+extends template
+
+block css
+    //- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
+    link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+
+block title
+    title Idei de afacere
+
+block content
+    include ../includes/mixins
+
+    .hidden
+        include ../../../build/assets/i/svg/inline/sprite.svg
+
+    include ../includes/header
+
+    section.news
+        section.section-dark.page-intro(style="background-image: url('assets/i/news/news-intro.jpg'); background-position: center 18%")
+            .page-intro__container
+                header.section__header.section__header--center
+                    h2.section__title Știri pentru afacerea ta
+                p Cele mai actuale știri, din cele mai veridice surse pentru ca să fii mereu la curent cu toate noutățile
+
+        .news__container
+            .news__navigation
+                ul.news__list
+                    li.active Toate stirile
+                    li Finanțări nerambursabile
+                    li Social
+                    li.sub-list Mai multe
+                        ul.news__sub-list
+                            li Despre Eu Consult
+                            li Business
+                            li Idei de afaceri
+                            li Istorii de succes
+                .news__search
+                    .show-search#js-show-search
+                        img(src="assets/i/svg/search.svg")
+                    .news__search-block#js-news__search-block
+                        input(type="text" placeholder="Search")
+                        .news__search-close#js-news__search-close
+
+                ul.news__register
+                    li
+                        a(href="#") Conecteaza-te/
+                    li
+                        a(href="#") Inregistreaza-te
+
+            .news__content
+                .news__item
+
+
+        include ../includes/connect-now
+    include ../includes/footer-hidden
+    include ../includes/socials-bottom
+    include ../includes/scripts/ie-scripts
+
+block scripts
+    script(src="assets/libs/jquery-easy-scroll/jquery.easeScroll.js")

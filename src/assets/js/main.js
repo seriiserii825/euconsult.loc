@@ -164,4 +164,14 @@ jQuery(document).ready(function($) {
 		});
 	};
 	popup();
+
+	let showSearch = function () {
+		$('#js-show-search').on('click', function () {
+			$('#js-news__search-block').show();
+		});
+		$('#js-news__search-close').on('click', function () {
+			$('#js-news__search-block').hide();
+		});
+	};
+	showSearch();
 });
