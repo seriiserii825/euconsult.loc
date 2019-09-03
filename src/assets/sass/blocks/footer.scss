@@ -2,7 +2,7 @@
   padding-top: 41px;
   padding-bottom: 25px;
   color: white;
-  &.hidden {
+  &.footer--hidden {
     @media screen and (max-width: 600px) {
       display: none;
     }

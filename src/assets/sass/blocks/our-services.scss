@@ -1,0 +1,123 @@
+.our-services-intro.page-intro {
+  padding-top: 95px;
+  padding-bottom: 52px;
+  .section__header {
+    margin-bottom: 34px;
+  }
+  .section__title {
+    padding-bottom: 9px;
+    &::after {
+      width: 120px;
+    }
+  }
+  p {
+    max-width: 530px;
+  }
+}
+
+.our-services__container {
+  margin: 0 auto;
+  max-width: 1066px;
+  @media screen and (max-width: 1090px) {
+    padding: 0 15px;
+  }
+}
+.our-services__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @media screen and (max-width: 978px) {
+    display: table;
+  }
+
+}
+.our-sevices__header {
+  display: grid;
+  grid-template-columns: 43px 1fr;
+  margin-right: 100px;
+  @media screen and (max-width: 978px) {
+    margin-right: 0;
+    margin-bottom: 30px;
+    padding: 15px;
+    width: 410px;
+    background: $san-marino;
+    box-shadow: rgba(0, 0, 0, 0.6) -1px 0px 12px 0px;
+  }
+
+}
+.our-services__item {
+  padding: 56px 0;
+  background: $seashell;
+  .our-services__number {
+    position: relative;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    color: $lucky-point;
+    background: white;
+    z-index: 2;
+    span {
+      @include spinnaker;
+      font-size: 30px;
+    }
+  }
+  .our-services__title {
+    position: relative;
+    padding: 31px 0 31px 16px;
+    width: 310px;
+    @include spinnaker;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background: $san-marino;
+    box-shadow: rgba(0, 0, 0, 0.6) -1px 0px 12px 0px;
+    z-index: 3;
+    @media screen and (max-width: 978px) {
+    	box-shadow: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: $accent-hex;
+    }
+  }
+}
+.our-services__item.our-services__item--dark {
+  background: $mercury;
+  .our-sevices__header {
+    @media screen and (max-width: 978px) {
+      background: $gallery;
+    }
+    
+  }
+  .our-services__number {
+    color: white;
+    background: $san-marino;
+  }
+  .our-services__title {
+    color: $lucky-point;
+    background: $gallery;
+  }
+}
+.our-services__list {
+  padding-right: 24px;
+  li {
+    @include helveticalight;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: bold;
+    letter-spacing: .72px;
+    color: $pickled-bluewood;
+    &::before {
+      content: '>';
+      margin-right: 3px;
+      width: 20px;
+    }
+  }
+}

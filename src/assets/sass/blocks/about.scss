@@ -1,7 +1,7 @@
 .page-about {
   margin: 0 auto;
   max-width: 1222px;
-  padding: 79px 15px 46px;
+  padding: 79px 15px 0;
   display: grid;
   grid-template-columns: 240px 1fr;
   grid-gap: 17px;
@@ -80,6 +80,14 @@
       top: -2px;
       left: 3px;
     }
+  }
+}
+.page-about__connect-now {
+  .connect-now {
+    position: relative;
+    padding-bottom: 14px;
+    top: -29px;
+    left: 11px;
   }
 }
 
