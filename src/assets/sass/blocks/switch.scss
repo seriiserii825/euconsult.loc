@@ -1,7 +1,7 @@
 .sandwitch-wrap {
   position: fixed;
   top: 20px;
-  right: 50px;
+  right: 70px;
   padding: 10px;
   display: none;
   border: 1px solid $lucky-point;
@@ -12,7 +12,7 @@
     display: block;
   }
   @media screen and (max-width: 500px) {
-    right: 20px;
+    right: 60px;
   }
 
 

@@ -1,0 +1,74 @@
+.history-succes {
+  background: $gallery;
+  .page-intro {
+    padding-top: 96px;
+    padding-bottom: 46px;
+    .section__header {
+      margin-bottom: 42px;
+    }
+    .section__title {
+      padding-bottom: 8px;
+      &::after {
+        width: 120px;
+      }
+    }
+  }
+  &__content {
+    position: relative;
+    left: 4px;
+    margin: 0 auto;
+    padding: 28px 15px 0;
+    max-width: 1180px;
+  }
+  &__item {
+    margin-bottom: 30px;
+    padding: 29px 49px;
+    border: 3px solid $accent-hex;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    margin-bottom: 27px;
+    @include helveticabold;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: .8px;
+    color: $lucky-point;
+  }
+  &__text {
+    img {
+      float: left;
+      padding-right: 17px;
+      padding-bottom: 4px;
+      @media screen and (max-width: 850px) {
+        display: block;
+        margin-bottom: 10px;
+        float: none;
+      }
+
+    }
+    p {
+      margin-bottom: 3px;
+      @include helveticalight;
+      font-size: 16.8px;
+      line-height: 20px;
+      letter-spacing: -0.3px;
+    }
+  }
+  &__reviews {
+    margin: 30px auto 0;
+    max-width: 640px;
+    &-text {
+      margin-bottom: 10px;
+      @include helveticalight;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 18.2px;
+      letter-spacing: .42px;
+      text-align: center;
+      color: $pickled-bluewood;
+    }
+  }
+}

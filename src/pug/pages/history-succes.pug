@@ -1,0 +1,65 @@
+extends template
+
+block css
+    //- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
+    link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+
+block title
+    title Istorii de succes
+
+block content
+    include ../includes/mixins
+
+    .hidden
+        include ../../../build/assets/i/svg/inline/sprite.svg
+
+    include ../includes/header
+
+    section.history-succes
+        section.section-dark.page-intro(style="background-image: url('assets/i/history-succes/history-succes-intro.jpg'); background-position: center 18%")
+            .page-intro__container
+                header.section__header.section__header--center
+                    h2.section__title Istorii de succes
+                p Companii și persoane care au beneficiat de suportul nostru în obținerea finanțării pentru afaceri
+
+        .history-succes__content
+            .history-succes__item
+                h4.history-succes__title Gandrabur Nicolae - apicultor, R-n. Cantemir
+                .history-succes__text
+                    img(src="assets/i/history-succes/apicultura.jpg")
+                    p Domeniul de apicultură îi este cunoscut de mic copil. Încă din copilărie participa la îngrijirea albinelor la prisaca pe care o are tatăl său. Cunoaște în detalii procesele de creștere a albinelor și de culegere a mierii.
+                    p Activînd cîțiva ani peste hotare și-a acumulat suma necesară de bani pe care a decis să o investească în activitatea pe care o practica de mai mulți ani.
+                    p Această ocupație l-a motivat să-și dezvolte o afacere proprie ca să nu mai fie nevoit să munceasca peste hotare. Realizarea acestui proiect i-a permis să fie alături de părinți și să asigure cîteva locuri de muncă consătenilor. Deasemenea a reușit să-și mai realizeze un vis, și anume să-si formeze o prisacă proprie. Împreună cu prisaca, datorită grantului PARE 1+1, a procurat tot utilajul împreună cu stupii cu familiile de albine.
+                    p Pe lingă producerea și comercializarea mierii a obținut venituri și din vînzarea familiilor de albine apărute prin roirea artificială prin divizarea familiilor de albine. Ca rezultat al granturilor primite și investițiilor efectuate, și-a asigurat un trai decent la el acasă.
+                .history-succes__reviews
+                    .history-succes__reviews-text "Datorită companiei EuConsult am putut să-mi dezvolt afacerea pînă la capăt. Echipa profesionistă mi-a oferit tot suportul și consultanța necesara pentru ca să obțin grantul de care aveam atât de mult nevoie."
+                    .history__author
+                        .history__img
+                            img(src="assets/i/history/author.jpg")
+                        .history__name Gandrabur Nicolae
+
+            .history-succes__item
+                h4.history-succes__title Calos Vitalie - agricultor, Anenii Noi
+                .history-succes__text
+                    img(src="assets/i/history-succes/green-house.jpg")
+                    p Calos Vitalie creştea de mai multi ani legume pe cîmp deschis, însă din cauza condiţiilor climaterice nefavorabile și lipsei unei sere performante suferea doar eșecuri.
+                    p Avînd în proprietate lot de pamînt şi fiind bine informat în domeniul de irigare, cu un bagaj mare de cunoștințe în domeniul de creştere a legumelor în cîmp deschis, domnul Vitalie de mai mult timp se preocupa cu analiza modelelor de cultivare în sere a legumelor pentru care exista o cerere mare pe piaţa locală.
+                    p În acea perioadă eforturile lui au fost orientate spre căutarea ofertelor de la partenerii ce puteau furniza module de seră și echipament necesar pentru cultivarea legumelor, precum şi materialului săditor.
+                    p Cercetînd amanuntit domeniul de cultivare a legumelor în sere, a avut inițiativa de a construi două module de seră cu suprafata totală de 1000 m2 pentru cultivarea legumelor, în special roşiilor şi castraveţilor.
+                    p Datorită grantului PARE 1+1 pe care l-a obținut, a reușit să-și instaleze sere de tip semitunel, executate dupa ultimele tehnologii moderne, ce au permis cultivarea cu succes a legumelor.
+                    p Cercetările efectuate l-au ajutat să-și amplaseze serele într-o regiune favorabilă din punct de vedere geografic și economic și anume în s.Varnita, r. Anenii Noi, dat fiind faptul că oferea o piaţă de desfacere mare inclusiv în partea transnistreană.
+                    p Creşterea legumelor în sere i-a permis sa elimine factorului extern (secetă, ploi abundente, grindină, etc.), și obținerea roadei de legume practic anul împrejur, fiind cunoscut bine faptul că cererea la legume în perioada rece este una destul de mare. Aceasta a fost posibil dupa instalarea sistemului de încălzire a serei. Un alt moment important reprezintă faptul că producţia crescută este autohtonă, în ultima perioadă aceasta fiind preferabilă faţă de legumele importate, trezînd o încredere mai mare clienţilor sub aspect ecologic.
+                .history-succes__reviews
+                    .history-succes__reviews-text "Echipa EuConsult lucrează eficient și operativ. Încă din prima zi de lucru mi-au stabilit bine planul de acțiuni pentru a accesa grantul de care aveam nevoie. Pe parcurs am urmat planul și într-un final am obținut grantul atât de important la acea perioadă. Îi recomand tututor pentru seriozitate, calitate și dinamism."
+                    .history__author
+                        .history__img
+                            //img(src="assets/i/history/author.jpg")
+                        .history__name Calos Vitalie
+
+        include ../includes/connect-now
+    include ../includes/footer-hidden
+    include ../includes/socials-bottom
+    include ../includes/scripts/ie-scripts
+
+block scripts
+    script(src="assets/libs/jquery-easy-scroll/jquery.easeScroll.js")
