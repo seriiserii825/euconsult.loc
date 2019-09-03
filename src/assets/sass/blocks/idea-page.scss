@@ -1,0 +1,51 @@
+.idea-page {
+  background: $gallery;
+  .page-intro {
+    padding-top: 96px;
+    padding-bottom: 40px;
+    .section__header {
+      margin-bottom: 46px;
+    }
+    .section__title {
+      padding-bottom: 8px;
+      &::after {
+        width: 120px;
+      }
+    }
+    p {
+      max-width: 720px;
+    }
+  }
+  &__content {
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 20px;
+    max-width: 1032px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 38px;
+    @media screen and (max-width: 1040px) {
+      display: block;
+    }
+
+    .idea__slide {
+      padding: 0;
+      box-shadow: -0.82px 0.57px 12px 0px rgba(0,0,0,0.6);
+      @media screen and (max-width: 1040px) {
+        margin-bottom: 30px;
+      }
+
+    }
+  }
+  .idea__block {
+    padding-top: 23px;
+    padding-left: 23px;
+    h5 {
+      letter-spacing: -.32px;
+    }
+  }
+  .connect-now {
+    padding-bottom: 42px;
+  }
+}

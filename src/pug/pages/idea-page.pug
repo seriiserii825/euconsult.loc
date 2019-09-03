@@ -1,0 +1,78 @@
+extends template
+
+block css
+    //- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
+    link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+
+block title
+    title Idei de afacere
+
+block content
+    include ../includes/mixins
+
+    .hidden
+        include ../../../build/assets/i/svg/inline/sprite.svg
+
+    include ../includes/header
+
+    section.idea-page
+        section.section-dark.page-intro(style="background-image: url('assets/i/idea-page/idea-intro.jpg'); background-position: center 18%")
+            .page-intro__container
+                header.section__header.section__header--center
+                    h2.section__title Idei de afacere la cheie
+                p Cele mai profitabile și accesibile idei pentru o afacere de succes 65% Finanțare nerambursabilă | Venit de la 50.000€/an
+
+        .idea-page__content
+            .idea__slide
+                .idea__img
+                    img(src="assets/i/idea-page/1.jpg" alt="")
+                .idea__block
+                    h5 CREȘTEREA CIREȘELOR ÎN SERE
+                    .idea__text
+                        a(href="#") Livadă super intensivă de cireși – o afacere profitabilă
+                        p Pornind de la statistica la nivel mondial care arată că cererea de cireșe este în continuă creștere și că piața este acoperită doar în proporție de 26%, ajungem..
+                        a.read-more(href="#") Afla mai mult
+            .idea__slide
+                .idea__img
+                    img(src="assets/i/idea-page/2.jpg" alt="")
+                .idea__block
+                    h5 CREȘTEREA ZMEUREI ÎN SERE
+                    .idea__text
+                        a(href="#") Plantație intensivă de zmeură – o afacere profitabilă
+                        p Pornind de la statistica la nivel mondial, care arată că cererea la pomușoare este în continuă creștere, pentru anul 2017 fiind de 8%, ajungem la concluzia..
+                        a.read-more(href="#") Afla mai mult
+            .idea__slide
+                .idea__img
+                    img(src="assets/i/idea-page/3.jpg" alt="")
+                .idea__block
+                    h5 CREȘTEREA MURELOR ÎN SERE
+                    .idea__text
+                        a(href="#") Plantație intensivă de mure – o afacere profitabilă
+                        p Pornind de la statistica la nivel mondial, care arată că cererea la pomușoare este în continuă creștere, pentru anul 2017 fiind de 8%, ajungem la concluzia..
+                        a.read-more(href="#") Afla mai mult
+            .idea__slide
+                .idea__img
+                    img(src="assets/i/idea-page/4.jpg" alt="")
+                .idea__block
+                    h5 CREȘTEREA AFINELOR ÎN SERE
+                    .idea__text
+                        a(href="#") Plantație intensivă de afine – o afacere profitabilă
+                        p Pornind de la statistica la nivel mondial, care arată că cererea la pomusoare este în continuă creștere, pentru anul 2017 fiind de 8%, ajungem la concluzia..
+                        a.read-more(href="#") Afla mai mult
+            .idea__slide
+                .idea__img
+                    img(src="assets/i/idea-page/5.jpg" alt="")
+                .idea__block
+                    h5 CREȘTEREA CAPȘUNELOR ÎN SERE
+                    .idea__text
+                        a(href="#") Plantație intensivă de căpsune – o afacere profitabilă
+                        p Pornind de la statistica la nivel mondial, care arată că cererea la pomușoare este în continuă creștere, pentru anul 2017 fiind de 8%, ajungem la concluzia că ..
+                        a.read-more(href="#") Afla mai mult
+
+        include ../includes/connect-now
+    include ../includes/footer-hidden
+    include ../includes/socials-bottom
+    include ../includes/scripts/ie-scripts
+
+block scripts
+    script(src="assets/libs/jquery-easy-scroll/jquery.easeScroll.js")
