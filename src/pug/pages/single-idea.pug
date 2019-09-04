@@ -1,0 +1,49 @@
+extends template
+
+block css
+    //- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
+    link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+
+block title
+    title Our services
+
+block content
+    include ../includes/mixins
+
+    .hidden
+        include ../../../build/assets/i/svg/inline/sprite.svg
+
+    include ../includes/header
+
+    section.single-idea.section-dark.page-intro(style="background-image: url('assets/i/our-services/our-services-intro.jpg'); background-position: center top")
+        .page-intro__container
+            header.section__header.section__header--center
+                h2.section__title CREȘTEREA CIREȘELOR ÎN SERE
+            p Livadă super intensivă de cireși – o afacere profitabilă 65% Finanțare nerambursabilă | Venit de la 50.000€/an
+
+    section.single-idea__container
+        p <b>Pornind de la statistica la nivel mondial care arată că cererea de cireșe este în continuă creștere și că piața este acoperită doar în proporție de 26%, ajungem la concluzia că este loc de desfacere pentru toată lumea. Dar aceasta nu este suficient pentru ca afacerea să fie profitabilă.</b> Mai trebuie să ținem cont de calitatea fructelor, cantitatea obținută la hectar și eliminarea riscurilor ce țin de creșterea cireșului și recoltarea fructelor. Și unul din cei mai importanți factori este obținerea fructelor mai devreme, când prețul pentru astfel de fructe este cel mai ridicat.
+        img(src="assets/i/idea-page/2.jpg")
+        p Astfel  <a href="#">www.euconsult.md</a> împreună cu partenerii săi vine cu soluția unei afaceri la cheie, care va înlatura toate riscurile în procesul de cultivare, va ridica productivitatea, va crește calitatea fructelor, va face posibilă obținerea recoltei mai devreme.
+        p Structura afacerii:
+        ul
+            li Teren agricol – minim 0,6 ha, optim – 5 ha
+            li Sera (solar, spațiu protejat) – construcție special adaptată cultivării arbuștilor fructiferi
+            li Sistem de irigare – vas de acumulare a apei, bandă de picurare, accesorii
+            li Răsad de căpșun – material săditor, soi special
+            li Ghid de creștere – informație utilă în procesul de cultivare
+        p Rezultate estimate:
+        ul
+            li Obținerea roadei – începând cu anul 1 de la plantare
+            li Cantitate la maturitate – 30–35 t/ha
+            li Perioada de recoltare – 2 săptamâni mai devreme
+        p Comercializare – la export
+
+    include ../includes/connect-now
+    include ../includes/footer-hidden
+    include ../includes/socials-bottom
+    include ../includes/popup
+    include ../includes/scripts/ie-scripts
+
+block scripts
+    script(src="assets/libs/jquery-easy-scroll/jquery.easeScroll.js")

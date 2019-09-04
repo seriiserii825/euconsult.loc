@@ -1,0 +1,92 @@
+.single-idea {
+  &.page-intro {
+    padding-top: 97px;
+    padding-bottom: 36px;
+    .section__header {
+      margin-bottom: 40px;
+    }
+    .section__title {
+      padding-bottom: 10px;
+      &::after {
+        width: 120px;
+      }
+    }
+    p {
+      position: relative;
+      left: 3px;
+      max-width: 620px;
+    }
+  }
+  &__container {
+    position: relative;
+    margin: 0 auto;
+    padding: 60px 15px 0 68px;
+    max-width: 850px;
+    @include helveticalight;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: .48px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: -64px;
+      width: 100px;
+      height: 3px;
+      background: $lucky-point;
+    }
+
+    &::before {
+      top: 75px;
+    }
+
+    &::after {
+      bottom: 140px;
+    }
+
+    b {
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    img {
+      display: table;
+      margin: 16px auto 15px 0;
+      max-width: none;
+      width: 90%;
+    }
+
+
+    a {
+      text-decoration: underline;
+    }
+
+    ul {
+      margin-top: -10px;
+      margin-bottom: 20px;
+
+      li {
+        position: relative;
+        padding-left: 20px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 10px;
+          left: 0;
+          width: 6px;
+          height: 6px;
+          background: $lucky-point;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .connect-now {
+    padding-top: 15px;
+  }
+}

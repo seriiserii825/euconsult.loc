@@ -210,7 +210,9 @@ jQuery(document).ready(function ($) {
 	newsList();
 
 	let historyMixitup = function () {
-		let mixer = mixitup('#js-news__container');
+		if($('#js-news__container').length){
+			let mixer = mixitup('#js-news__container');
+		}
 	};
 	historyMixitup();
 });
