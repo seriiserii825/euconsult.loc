@@ -175,7 +175,11 @@
     @include helveticalight;
     font-size: 16px;
     letter-spacing: -.1px;
-    //display: none;
+    display: none;
+    @media screen and (max-width: 978px) {
+      display: block;
+    }
+
   }
 
   &__search {
