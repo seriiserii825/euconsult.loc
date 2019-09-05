@@ -1,0 +1,36 @@
+extends template
+
+block css
+    //- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
+    link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+
+block title
+    title Our services
+
+block content
+    include ../includes/mixins
+
+    .hidden
+        include ../../../build/assets/i/svg/inline/sprite.svg
+
+    include ../includes/header
+
+    .finance-single
+        section.finance-single.section-dark.page-intro(style="background-image: url('assets/i/finance-single/agriculture.jpg'); background-position: center top")
+            .page-intro__container
+                header.section__header.section__header--center
+                    h2.section__title FINANȚĂRI PENTRU AGRICULTURĂ
+                p Tipuri de finanțări | Condiții | Activități și echipamente acceptate
+
+        section.finance-single__container
+            include ../includes/sidebar
+            section.main-single
+
+    include ../includes/connect-now
+    include ../includes/footer-hidden
+    include ../includes/socials-bottom
+    include ../includes/popup
+    include ../includes/scripts/ie-scripts
+
+block scripts
+    script(src="assets/libs/jquery-easy-scroll/jquery.easeScroll.js")
