@@ -25,4 +25,50 @@
     padding-top: 62px;
     max-width: 980px;
   }
+  .main-single {
+    @include helveticalight;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: .48px;
+    b {
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    img {
+      display: table;
+      margin: 16px auto 15px 0;
+      max-width: none;
+      width: 90%;
+    }
+
+
+    a {
+      text-decoration: underline;
+    }
+
+    ul {
+      margin-top: -10px;
+      margin-bottom: 20px;
+
+      li {
+        position: relative;
+        padding-left: 20px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 10px;
+          left: 0;
+          width: 6px;
+          height: 6px;
+          background: $lucky-point;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
 }
