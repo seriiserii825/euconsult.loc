@@ -1,4 +1,8 @@
 .sidebar {
+  @media screen and (max-width: 700px) {
+    padding: 0 15px;
+  }
+
   ul.list,
   ul.sub-list {
     li {
@@ -25,12 +29,12 @@
   }
   ul.list {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     padding-bottom: 50px;
     &::after {
       content: '';
       position: absolute;
-      bottom: 0;
+      bottom: 12px;
       left: 50%;
       transform: translateX(-50%);
       width: 96px;
@@ -38,9 +42,14 @@
       background: $lucky-point;
     }
     & > li {
-      margin-bottom: 10px;
-      max-width: 216px;
+      margin-bottom: 30px;
       color: white;
+      &:nth-child(2) {
+        margin-bottom: 20px;
+      }
+      & > a {
+        font-size: 17px;
+      }
       a {
         padding: 20px 0;
         background: $fiord;
@@ -51,25 +60,28 @@
      li {
        a {
          padding: 14px 0;
+         letter-spacing: .7px;
          color: $lucky-point;
          background: $concrete;
        }
     }
   }
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     @include helveticalight;
     font-size: 20px;
     font-weight: bold;
     line-height: 30px;
     letter-spacing: .6px;
+    text-align: center;
   }
   &__contacts {
     ul {
       li {
         display: flex;
         align-items: center;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
+        padding-left: 12px;
       }
       img {
         margin-right: 10px;

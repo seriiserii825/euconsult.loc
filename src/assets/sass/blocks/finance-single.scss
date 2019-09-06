@@ -20,10 +20,16 @@
   &__container {
     display: grid;
     grid-template-columns: 252px 1fr;
-    grid-gap: 40px;
-    margin: 0 auto;
+    grid-gap: 43px;
+    margin: 0 auto 0 60px;
     padding-top: 62px;
-    max-width: 980px;
+    max-width: 1012px;
+    @media screen and (max-width: 700px) {
+      display: block;
+      margin: 0 auto;
+      max-width: 400px
+    }
+
   }
   .main-single {
     @include helveticalight;
@@ -61,8 +67,8 @@
         &::before {
           content: '';
           position: absolute;
-          top: 10px;
-          left: 0;
+          top: 11px;
+          left: 6px;
           width: 6px;
           height: 6px;
           background: $lucky-point;
