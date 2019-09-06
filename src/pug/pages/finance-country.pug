@@ -1,0 +1,98 @@
+extends template
+
+block css
+    //- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
+    link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+
+block title
+    title Our services
+
+block content
+    include ../includes/mixins
+
+    .hidden
+        include ../../../build/assets/i/svg/inline/sprite.svg
+
+    include ../includes/header
+
+    .finance-country
+        section.our-services-intro.section-dark.page-intro(style="background-image: url('assets/i/finance-single/finance-country-bg.jpg'); background-position: center top")
+            .page-intro__container
+                header.section__header.section__header--center
+                    h2.section__title Finanțări pentru Republica Moldova
+                p Tipuri de finanțări | Condiții | Activități și echipamente acceptate
+
+        section.page-title
+            .page-title__container
+                h2.section__title Programe de finanțare
+
+        section.our-services
+            .our-services__item.our-services__item--dark
+                .our-services__container
+                    .our-services__content
+                        header.our-sevices__header
+                            h3.our-services__title PROGRAMUL PARE 1+1
+                            p Tip finanțare: grant (finanțare nerambursabilă)
+                        ul.our-services__list
+                            li Suma maximă a grantului: 250 000 mdl, 50% din investiția totală
+                            li Destinație: Inițierea sau dezvoltarea afacerii
+                            li Beneficiar: Cetățean RM, lucrător migrant sau rudă de gradul I
+                            li Tip activitate: Agricultură, Zootehnie, Producere, Prestări servicii, Turism
+
+            .our-services__item
+                .our-services__container
+                    .our-services__content
+                        header.our-sevices__header
+                            h3.our-services__title SUBVENȚII ÎN AVANS
+                            p Tip finanțare: subvenție (finanțare nerambursabilă)
+                        ul.our-services__list
+                            li Suma maximă a subvenției: 650 000 mdl, 65% din investiția totală
+                            li Destinație: Inițierea sau dezvoltarea afacerii
+                            li Beneficiar: Tânar cu vârsta pâna la 35 ani, sau femeie
+                            li Tip activitate: Agricultură, Zootehnie, Producere, Prestări servicii, Agro-turism
+
+            .our-services__item.our-services__item--dark
+                .our-services__container
+                    .our-services__content
+                        header.our-sevices__header
+                            h3.our-services__title SUBVENȚII DE STAT
+                            p Tip finanțare: subvenție (finanțare nerambursabilă)
+                        ul.our-services__list
+                            li Suma maximă a subvenției: 65% din investiția totală
+                            li Destinație: Inițierea sau dezvoltarea afacerii
+                            li Beneficiar: Orice întreprindere care întrunește condițiile programului
+                            li Tip activitate: Agricultură, Zootehnie, Producere, Prestări servicii, Agro-turism
+
+            .our-services__item
+                .our-services__container
+                    .our-services__content
+                        header.our-sevices__header
+                            h3.our-services__title FEMEI ÎN AFACERI
+                            p Tip finanțare: grant (finanțare nerambursabilă)
+                        ul.our-services__list
+                            li Suma minimă a grantului: 7 500 euro, pentru inițierea afacerii
+                            li Suma maximă a grantului: 75 000 euro, pentru dezvoltarea afacerii
+                            li Destinație: Inițierea sau dezvoltarea afacerii
+                            li Beneficiar: Afaceri create și gestionate de femei
+                            li Tip activitate: Producere, Prestări servicii, Agro-turism, Meștesugărit
+
+            .our-services__item.our-services__item--dark
+                .our-services__container
+                    .our-services__content
+                        header.our-sevices__header
+                            h3.our-services__title PROGRAMUL MAC-P
+                            p Tip finanțare: grant (finanțare nerambursabilă)
+                        ul.our-services__list
+                            li Suma maximă a grantului: 350 000 usd, 50% din investiția totală
+                            li Destinație: Dezvoltarea afacerii
+                            li Beneficiar: Grup de producători
+                            li Tip activitate: Agricultură
+
+    include ../includes/connect-now
+    include ../includes/footer-hidden
+    include ../includes/socials-bottom
+    include ../includes/popup
+    include ../includes/scripts/ie-scripts
+
+block scripts
+    script(src="assets/libs/jquery-easy-scroll/jquery.easeScroll.js")

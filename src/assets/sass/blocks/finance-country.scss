@@ -1,0 +1,71 @@
+.finance-country {
+  .our-services-intro.page-intro {
+    margin-bottom: 0;
+    padding-bottom: 45px;
+  }
+  .page-intro__container {
+    .section__header {
+      margin-bottom: 38px;
+    }
+  }
+  .page-title {
+    padding-top: 37px;
+    padding-bottom: 30px;
+  }
+  .our-sevices__header {
+    display: block;
+    h3 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-left: 7px;
+      @include helveticalight;
+      font-size: 16px;
+      font-weight: 700;
+      color: $lucky-point;
+      @media screen and (max-width: 978px) {
+      	color: white;
+      }
+
+    }
+  }
+  .our-services__container {
+    max-width: 1105px;
+  }
+  .our-services__item {
+    padding: 47px 0;
+    &.our-services__item--dark {
+      .our-sevices__header p{
+        @media screen and (max-width: 978px) {
+          color: $lucky-point;
+        }
+      }
+    }
+  }
+  .our-sevices__header {
+    margin-right: 70px;
+    @media screen and (max-width: 978px) {
+      margin-right: 0;
+    }
+    @media screen and (max-width: 460px) {
+      width: auto;
+    }
+
+
+  }
+  .our-services__title {
+    padding-left: 33px;
+    width: 344px;
+    letter-spacing: .7px;
+    @media screen and (max-width: 460px) {
+      width: auto;
+    }
+
+  }
+}
+.our-services-intro.page-intro {
+  margin-bottom: 40px;
+  p {
+    max-width: 712px;
+  }
+}
